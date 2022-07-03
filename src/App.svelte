@@ -11,11 +11,11 @@
         <div class="city-list-column-container">
           <div>
             <p>Przed:</p>
-            <img src={photos.before} />
+            <img src={photos.before} alt={`Zdjęcie ${cityName} przed rewitalizacją`} />
           </div>
           <div>
             <p>Po:</p>
-            <img src={photos.after} />
+            <img src={photos.after} alt={`Zdjęcie ${cityName} po rewitalizacji`} />
           </div>
         </div>
       </li>
@@ -73,5 +73,10 @@
   .city-list-column-container {
     display: flex;
     justify-content: space-around;
+  }
+  @media (max-width: 480px) {
+    .city-list-column-container {
+      display: block;
+    }
   }
 </style>
