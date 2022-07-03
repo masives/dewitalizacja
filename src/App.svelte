@@ -18,6 +18,7 @@
             <img src={photos.after} alt={`Zdjęcie ${cityName} po rewitalizacji`} />
           </div>
         </div>
+        <p>Źródło zdjęć: <a href={photos.sourceUrl} target="_blank" rel="noopener noreferrer">{photos.sourceUrl}</a></p>
       </li>
     {/each}
   </ul>
