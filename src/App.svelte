@@ -4,12 +4,18 @@
 
 <main>
   <h1>Dewitalizacja</h1>
+  <h2>Dodaj swoją propozycję</h2>
   <p>
-    Inspiracje:
-    <a href={'https://smoglab.pl/przeglad-rewitalizacji-rynkow/'} target="_blank" rel="noopener noreferrer"
-      >https://smoglab.pl/przeglad-rewitalizacji-rynkow/</a
+    Stwórz issue lub pull request w
+    <a href={'https://github.com/masives/dewitalizacja#jak-doda%C4%87-wpis'} target="_blank" rel="noopener noreferrer"
+      >https://github.com/masives/dewitalizacja</a
     >
+    lub napisz na <a href="mailto:jozollo@gmail.com">jozollo@gmail.com</a>
   </p>
+  <h2>Inspiracje:</h2>
+  <a href={'https://smoglab.pl/przeglad-rewitalizacji-rynkow/'} target="_blank" rel="noopener noreferrer"
+    >https://smoglab.pl/przeglad-rewitalizacji-rynkow/</a
+  >
 
   <ul>
     {#each cityData as { title, photos, articles, cost }}
