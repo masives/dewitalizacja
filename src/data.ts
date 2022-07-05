@@ -2,7 +2,7 @@ import skierniewiceAfter from './assets/images/skierniewice_after.jpeg';
 import skierniewiceBefore from './assets/images/skierniewice_before.jpeg';
 
 interface Entry {
-  cityName: string;
+  title: string;
   cost?: number;
   articles?: {
     label: string;
@@ -10,19 +10,21 @@ interface Entry {
   }[];
   photos: {
     before: string;
+    beforeSourceUrl: string;
     after: string;
-    sourceUrl: string;
+    afterSourceUrl: string;
   };
 }
 
 export const cityData: Entry[] = [
   {
-    cityName: 'Skierniwice',
+    title: 'Skierniwice',
 
     photos: {
       after: skierniewiceAfter,
       before: skierniewiceBefore,
-      sourceUrl: 'https://twitter.com/JanMencwel/status/1138194072106078208',
+      beforeSourceUrl: 'https://twitter.com/JanMencwel/status/1138194072106078208',
+      afterSourceUrl: 'https://twitter.com/JanMencwel/status/1138194072106078208',
     },
   },
 ];

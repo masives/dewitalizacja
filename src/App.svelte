@@ -5,20 +5,31 @@
 <main>
   <h1>Dewitalizacja</h1>
   <ul>
-    {#each cityData as { cityName, photos, articles, cost }}
+    {#each cityData as { title, photos, articles, cost }}
       <li>
-        <h2>{cityName}</h2>
+        <h2>{title}</h2>
         <div class="city-list-item">
           <div class="city-list-item__column">
             <p>Przed:</p>
-            <img src={photos.before} alt={`Zdjęcie ${cityName} przed rewitalizacją`} />
+            <figure>
+              <img src={photos.before} alt={`Zdjęcie ${title} przed rewitalizacją`} />
+              <figcaption>
+                <p>
+                  Źródło zdjęcia: <a href={photos.beforeSourceUrl} target="_blank" rel="noopener noreferrer">{photos.afterSourceUrl}</a>
+                </p>
+              </figcaption>
+            </figure>
           </div>
           <div class="city-list-item__column">
             <p>Po:</p>
-            <img src={photos.after} alt={`Zdjęcie ${cityName} po rewitalizacji`} />
+            <figure>
+              <img src={photos.after} alt={`Zdjęcie ${title} po rewitalizacji`} />
+              <figcaption>
+                <p>Źródło zdjęcia: <a href={photos.afterSourceUrl} target="_blank" rel="noopener noreferrer">{photos.afterSourceUrl}</a></p>
+              </figcaption>
+            </figure>
           </div>
         </div>
-        <p>Źródło zdjęć: <a href={photos.sourceUrl} target="_blank" rel="noopener noreferrer">{photos.sourceUrl}</a></p>
       </li>
     {/each}
   </ul>
