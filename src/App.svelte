@@ -4,6 +4,13 @@
 
 <main>
   <h1>Dewitalizacja</h1>
+  <p>
+    Inspiracje:
+    <a href={'https://smoglab.pl/przeglad-rewitalizacji-rynkow/'} target="_blank" rel="noopener noreferrer"
+      >https://smoglab.pl/przeglad-rewitalizacji-rynkow/</a
+    >
+  </p>
+
   <ul>
     {#each cityData as { title, photos, articles, cost }}
       <li>
@@ -15,7 +22,12 @@
               <img src={photos.before} alt={`Zdjęcie ${title} przed rewitalizacją`} />
               <figcaption>
                 <p>
-                  Źródło zdjęcia: <a href={photos.beforeSourceUrl} target="_blank" rel="noopener noreferrer">{photos.afterSourceUrl}</a>
+                  Źródło zdjęcia: <a
+                    href={photos.beforeSourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="city-list-item__source-url">{photos.afterSourceUrl}</a
+                  >
                 </p>
               </figcaption>
             </figure>
@@ -25,7 +37,14 @@
             <figure>
               <img src={photos.after} alt={`Zdjęcie ${title} po rewitalizacji`} />
               <figcaption>
-                <p>Źródło zdjęcia: <a href={photos.afterSourceUrl} target="_blank" rel="noopener noreferrer">{photos.afterSourceUrl}</a></p>
+                <p>
+                  Źródło zdjęcia: <a
+                    href={photos.afterSourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="city-list-item__source-url">{photos.afterSourceUrl}</a
+                  >
+                </p>
               </figcaption>
             </figure>
           </div>
@@ -89,6 +108,13 @@
 
   .city-list-item__column {
     width: 48%;
+  }
+
+  .city-list-item__source-url {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
   }
 
   @media (max-width: 480px) {
