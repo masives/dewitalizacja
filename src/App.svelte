@@ -36,8 +36,6 @@
   }
 
   img {
-    height: 16rem;
-    /* width: 16rem; */
     object-fit: scale-down;
     max-width: 100%;
   }
