@@ -8,12 +8,12 @@
     {#each cityData as { cityName, photos, articles, cost }}
       <li>
         <h2>{cityName}</h2>
-        <div class="city-list-column-container">
-          <div>
+        <div class="city-list-item">
+          <div class="city-list-item__column">
             <p>Przed:</p>
             <img src={photos.before} alt={`Zdjęcie ${cityName} przed rewitalizacją`} />
           </div>
-          <div>
+          <div class="city-list-item__column">
             <p>Po:</p>
             <img src={photos.after} alt={`Zdjęcie ${cityName} po rewitalizacji`} />
           </div>
@@ -37,7 +37,9 @@
 
   img {
     height: 16rem;
-    width: 16rem;
+    /* width: 16rem; */
+    object-fit: scale-down;
+    max-width: 100%;
   }
 
   h1 {
@@ -71,13 +73,22 @@
     list-style: none;
   }
 
-  .city-list-column-container {
+  .city-list-item {
     display: flex;
     justify-content: space-around;
   }
+
+  .city-list-item__column {
+    width: 48%;
+  }
+
   @media (max-width: 480px) {
-    .city-list-column-container {
+    .city-list-item {
       display: block;
+    }
+
+    .city-list-item__column {
+      width: auto;
     }
   }
 </style>
