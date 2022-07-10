@@ -4,6 +4,12 @@
 
 <main>
   <h1>Dewitalizacja</h1>
+  <p>
+    Witaj na stronie poświęconej projektom betonowania przestrzeni publicznej pod przykrywką rewitalizacji. Na tej stronie znajdziesz listę
+    projektów, linki do materiałów opisujących ten problem.
+  </p>
+  <p>Mam nadzieję, że niniejsza strona stanie się kompendium wiedzy w tym temacie i posłuży jako przykład wskazujący na skalę problemu</p>
+  <p>Jeśli masz jakieś sugestie lub propozycje zachęcam do kontaktu <a href="mailto:jozollo@gmail.com">jozollo@gmail.com</a></p>
   <h2>Dodaj swoją propozycję</h2>
   <p>
     Stwórz issue lub pull request w
@@ -122,6 +128,13 @@
   }
 
   @media (max-width: 480px) {
+    main {
+      padding: 0;
+    }
+
+    p {
+      max-width: none;
+    }
     .city-list-item {
       display: block;
     }
