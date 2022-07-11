@@ -2,12 +2,12 @@
   "name": "dewitalizacja",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "serverless:serve": "netlify functions:serve"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
@@ -20,5 +20,9 @@
     "tslib": "^2.3.1",
     "typescript": "^4.5.4",
     "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "netlify-cli": "^10.7.1",
+    "node-mailjet": "^5.0.1"
   }
 }
