@@ -28,3 +28,16 @@ This template should help get you started developing with Svelte and TypeScript 
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+
+
+# TODO i do rozważenia
+
+- [x] krótki opis problemu po co ta strona
+- [x] formularz do zgłaszania innych projektów dewitalizacji
+- [ ] komentarze mieszkańców i władz
+- [ ] koszt projektów z podziałem na unijne i własne
+- [ ] licznik łacznego kosztu projektów
+- [ ] sekcja/podstrona materiały o problemie (betonoza, wyspa cieplna)
+- [ ] poprawki pod seo
+- [ ] lazy loading zdjęć
+- [ ] automatyczna optymalizacja zdjęć podczas buildu

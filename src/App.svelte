@@ -1,72 +1,34 @@
 <script lang="ts">
-  import { cityData } from './data';
+  import Contact from './Contact.svelte';
+  import { Router, Route, Link } from 'svelte-navigator';
+  import Home from './Home.svelte';
 </script>
 
-<main>
-  <h1>Dewitalizacja</h1>
-  <p>
-    Witaj na stronie poświęconej projektom betonowania przestrzeni publicznej pod przykrywką rewitalizacji. Na tej stronie znajdziesz listę
-    projektów, linki do materiałów opisujących ten problem.
-  </p>
-  <p>Mam nadzieję, że niniejsza strona stanie się kompendium wiedzy w tym temacie i posłuży jako przykład wskazujący na skalę problemu</p>
-  <p>Jeśli masz jakieś sugestie lub propozycje zachęcam do kontaktu <a href="mailto:jozollo@gmail.com">jozollo@gmail.com</a></p>
-  <h2>Dodaj swoją propozycję</h2>
-  <p>
-    Stwórz issue lub pull request w
-    <a href={'https://github.com/masives/dewitalizacja#jak-doda%C4%87-wpis'} target="_blank" rel="noopener noreferrer"
-      >https://github.com/masives/dewitalizacja</a
-    >
-    lub napisz na <a href="mailto:jozollo@gmail.com">jozollo@gmail.com</a>
-  </p>
-  <h2>Inspiracje:</h2>
-  <a href={'https://smoglab.pl/przeglad-rewitalizacji-rynkow/'} target="_blank" rel="noopener noreferrer"
-    >https://smoglab.pl/przeglad-rewitalizacji-rynkow/</a
+<Router>
+  <header>
+    <nav>
+      <Link to="/">Strona główna</Link>
+      <Link to="contact">Kontakt</Link>
+    </nav>
+  </header>
+  <main>
+    <h1>Dewitalizacja</h1>
+    <Route path="contact">
+      <Contact />
+    </Route>
+
+    <Route path="/">
+      <Home />
+    </Route>
+  </main>
+</Router>
+<footer>
+  <a href={'https://github.com/masives/dewitalizacja#jak-doda%C4%87-wpis'} target="_blank" rel="noopener noreferrer"
+    >https://github.com/masives/dewitalizacja</a
   >
+</footer>
 
-  <ul>
-    {#each cityData as { title, photos, articles, cost }}
-      <li>
-        <h2>{title}</h2>
-        <div class="city-list-item">
-          <div class="city-list-item__column">
-            <p>Przed:</p>
-            <figure>
-              <img src={photos.before} alt={`Zdjęcie ${title} przed rewitalizacją`} />
-              <figcaption>
-                <p>
-                  Źródło zdjęcia: <a
-                    href={photos.beforeSourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="city-list-item__source-url">{photos.afterSourceUrl}</a
-                  >
-                </p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="city-list-item__column">
-            <p>Po:</p>
-            <figure>
-              <img src={photos.after} alt={`Zdjęcie ${title} po rewitalizacji`} />
-              <figcaption>
-                <p>
-                  Źródło zdjęcia: <a
-                    href={photos.afterSourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="city-list-item__source-url">{photos.afterSourceUrl}</a
-                  >
-                </p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </li>
-    {/each}
-  </ul>
-</main>
-
-<style>
+<style global>
   :root {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
@@ -111,22 +73,6 @@
     list-style: none;
   }
 
-  .city-list-item {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .city-list-item__column {
-    width: 48%;
-  }
-
-  .city-list-item__source-url {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block;
-  }
-
   @media (max-width: 480px) {
     main {
       padding: 0;
@@ -134,13 +80,6 @@
 
     p {
       max-width: none;
-    }
-    .city-list-item {
-      display: block;
-    }
-
-    .city-list-item__column {
-      width: auto;
     }
   }
 </style>
