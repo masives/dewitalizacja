@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e8e1d204-f29e-4a94-9b53-b0ff90ffc630/deploy-status)](https://app.netlify.com/sites/dewitalizacja/deploys)
+
 # Dewitalizacja
 
 Problemem wielu miast Polski są projekty "rewitalizacji" będące przykrywką do zabetonowania miast. Strona ta ma na celu stworzenie kompendium projektów, które mogą być używane jako źródło wiedzy oraz argument przeciwko dalszym projektom.
