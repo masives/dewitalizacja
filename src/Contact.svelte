@@ -26,6 +26,7 @@
 
 <style>
   .form-wrapper {
+    margin: 0 auto;
     max-width: 640px;
   }
 </style>
