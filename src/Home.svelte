@@ -16,12 +16,12 @@
 
 <ul>
   {#each cityData as { title, photos, articles, cost }}
-    <li>
+    <li class="city-list__wrapper">
       <h2>{title}</h2>
       <div class="city-list-item">
         <div class="city-list-item__column">
           <p>Przed:</p>
-          <figure>
+          <figure class="city-list-item__figure">
             <img src={photos.before} alt={`Zdjęcie ${title} przed rewitalizacją`} />
             <figcaption>
               <p>
@@ -54,6 +54,13 @@
 </ul>
 
 <style>
+  .city-list__wrapper {
+    margin: 1rem;
+    border: 1px solid var(--background-color);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+
   .city-list-item {
     display: flex;
     justify-content: space-around;
@@ -63,6 +70,9 @@
     width: 48%;
   }
 
+  .city-list-item__figure {
+    margin: 1rem;
+  }
   .city-list-item__source-url {
     white-space: nowrap;
     overflow: hidden;

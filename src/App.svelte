@@ -59,11 +59,14 @@
   }
 
   h1 {
-    color: var(--primary-color);
     text-transform: uppercase;
     font-weight: 100;
     line-height: 1.1;
     margin: 2rem auto;
+  }
+  h1,
+  h2 {
+    color: var(--primary-color);
   }
 
   p {
