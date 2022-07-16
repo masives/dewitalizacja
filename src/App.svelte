@@ -31,6 +31,20 @@
 <style global>
   :root {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    --primary-color: #d9534f;
+    --background-color: #96ceb4;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header,
+  footer {
+    background-color: var(--background-color);
+    padding: 1rem;
   }
 
   main {
@@ -45,7 +59,7 @@
   }
 
   h1 {
-    color: #ff3e00;
+    color: var(--primary-color);
     text-transform: uppercase;
     font-weight: 100;
     line-height: 1.1;
