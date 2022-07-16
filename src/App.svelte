@@ -34,6 +34,7 @@
 
     --primary-color: #d9534f;
     --background-color: #96ceb4;
+    --accent-color: #ffeead;
   }
 
   body {
@@ -45,6 +46,16 @@
   footer {
     background-color: var(--background-color);
     padding: 1rem;
+  }
+
+  nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    font-weight: 500;
   }
 
   main {
