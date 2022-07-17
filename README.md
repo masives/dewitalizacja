@@ -2,6 +2,10 @@
 
 # Dewitalizacja
 
+Słowo "dewitalizacja" nagłośnił Jan Mencwel, autor książki "Betonoza. Jak się niszczy polskie miasta", współzałożyciel Miasto Jest Nasze:
+
+"Powtarza się ten sam model: psuje się miejskie przestrzenie, pozbawiając ich drzew. Dzieje się to wszędzie i za ciężkie pieniądze. Często są to miliony euro wydane z dotacji europejskich. Oczywiście nie jest to żadna rewitalizacja, tylko dewitalizacja".
+
 Problemem wielu miast Polski są projekty "rewitalizacji" będące przykrywką do zabetonowania miast. Strona ta ma na celu stworzenie kompendium projektów, które mogą być używane jako źródło wiedzy oraz argument przeciwko dalszym projektom.
 
 # Jak dodać wpis
@@ -21,7 +25,7 @@ Stwórz issue zawierające następujące informacje
    1. Sklonuj repozytorium
    2. Do folderu [src/assets/images/](src/assets/images/) dodaje zdjęcia trzymając się konwencji (cityName)_(before|after).ext
    3. Do [data.ts](src/data.ts) dodaj kolejny wpis zgodnie z definicją typów
-   4.  Stwórz pull requesta i oznacz @masives
+   4. Stwórz pull requesta i oznacz @masives
 
 # Svelte + TS + Vite
 
