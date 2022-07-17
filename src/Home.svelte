@@ -14,6 +14,10 @@
   >https://smoglab.pl/przeglad-rewitalizacji-rynkow/</a
 >
 
+<p>Słowo "dewitalizacja" nagłośnił Jan Mencwel, autor książki "Betonoza. Jak się niszczy polskie miasta", współzałożyciel Miasto Jest Nasze:
+</p>
+<p>
+  "Powtarza się ten sam model: psuje się miejskie przestrzenie, pozbawiając ich drzew. Dzieje się to wszędzie i za ciężkie pieniądze. <br/> Często są to miliony euro wydane z dotacji europejskich. Oczywiście nie jest to żadna rewitalizacja, tylko dewitalizacja".</p>
 <ul>
   {#each cityData as { title, photos, articles, cost }}
     <li class="city-list__wrapper">
