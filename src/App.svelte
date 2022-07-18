@@ -23,9 +23,7 @@
   </main>
 </Router>
 <footer>
-  <a href={'https://github.com/masives/dewitalizacja#jak-doda%C4%87-wpis'} target="_blank" rel="noopener noreferrer"
-    >https://github.com/masives/dewitalizacja</a
-  >
+  © 2022 <a href={'https://github.com/masives/dewitalizacja#jak-doda%C4%87-wpis'} target="_blank" rel="noopener noreferrer">Józef Piecyk</a>
 </footer>
 
 <style global>
@@ -46,6 +44,10 @@
   footer {
     background-color: var(--background-color);
     padding: 1rem;
+  }
+
+  footer {
+    text-align: center;
   }
 
   nav a {
