@@ -16,7 +16,7 @@
       title="Formularz kontaktowy google"
       src="https://docs.google.com/forms/d/e/1FAIpQLSdfh_I_mRgCUS7GTubGyvUa4jDG7Pu43G-lSr_RPeKQuKenIg/viewform?embedded=true"
       width="100%"
-      height="1746"
+      height="1938"
       frameborder="0"
       marginheight="0"
       marginwidth="0">Loading…</iframe
