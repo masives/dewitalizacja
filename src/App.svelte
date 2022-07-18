@@ -105,7 +105,7 @@
 
   @media (max-width: 480px) {
     main {
-      padding: 0;
+      padding: 0.5rem;
     }
 
     p {

@@ -14,10 +14,13 @@
   >https://smoglab.pl/przeglad-rewitalizacji-rynkow/</a
 >
 
-<p>Słowo "dewitalizacja" nagłośnił Jan Mencwel, autor książki "Betonoza. Jak się niszczy polskie miasta", współzałożyciel Miasto Jest Nasze:
+<p>
+  Słowo "dewitalizacja" nagłośnił Jan Mencwel, autor książki "Betonoza. Jak się niszczy polskie miasta", współzałożyciel Miasto Jest Nasze:
 </p>
 <p>
-  "Powtarza się ten sam model: psuje się miejskie przestrzenie, pozbawiając ich drzew. Dzieje się to wszędzie i za ciężkie pieniądze. <br/> Często są to miliony euro wydane z dotacji europejskich. Oczywiście nie jest to żadna rewitalizacja, tylko dewitalizacja".</p>
+  "Powtarza się ten sam model: psuje się miejskie przestrzenie, pozbawiając ich drzew. Dzieje się to wszędzie i za ciężkie pieniądze. <br />
+  Często są to miliony euro wydane z dotacji europejskich. Oczywiście nie jest to żadna rewitalizacja, tylko dewitalizacja".
+</p>
 <ul>
   {#each cityData as { title, photos, articles, cost }}
     <li class="city-list__wrapper">
@@ -59,7 +62,7 @@
 
 <style>
   .city-list__wrapper {
-    margin: 1rem;
+    margin: 1rem 0;
     border: 1px solid var(--background-color);
     border-radius: 1rem;
     box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
