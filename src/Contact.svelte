@@ -5,7 +5,7 @@
   <h2>Dodaj swoją propozycję</h2>
   <p>Skorzystaj z poniższego formularza google lub wyślij mi maila na <a href="mailto:jozollo@gmail.com">jozollo@gmail.com</a></p>
   <p>
-    Jeśli chcesz pomóc w budowie strony możesz pozpośrednio proponować poprawki repozytorium github <a
+    Jeśli chcesz pomóc w budowie strony możesz bezpośrednio proponować poprawki repozytorium github <a
       href={'https://github.com/masives/dewitalizacja#jak-doda%C4%87-wpis'}
       target="_blank"
       rel="noopener noreferrer">https://github.com/masives/dewitalizacja</a
