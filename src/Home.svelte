@@ -25,6 +25,7 @@
   {#each cityData as { title, photos, articles, cost }}
     <li class="city-list__wrapper">
       <h2>{title}</h2>
+      <h4>Koszt remontu: {cost} mln zł</h4>
       <div class="city-list-item">
         <div class="city-list-item__column">
           <p>Przed:</p>
