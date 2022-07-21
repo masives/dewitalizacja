@@ -73,7 +73,7 @@
 
 <style>
   .total-cost {
-    border: 2px solid var(--background-color);
+    border: 2px solid var(--primary-color);
     border-radius: 1rem;
     padding: 1rem;
     background-color: var(--accent-color);
