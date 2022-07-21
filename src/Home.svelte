@@ -1,5 +1,7 @@
 <script lang="ts">
   import { cityData } from './data';
+
+  const totalCost = cityData.reduce((acc, curr) => (curr.cost ? acc + curr.cost : acc), 0);
 </script>
 
 <p>
@@ -21,6 +23,7 @@
   "Powtarza się ten sam model: psuje się miejskie przestrzenie, pozbawiając ich drzew. Dzieje się to wszędzie i za ciężkie pieniądze. <br />
   Często są to miliony euro wydane z dotacji europejskich. Oczywiście nie jest to żadna rewitalizacja, tylko dewitalizacja".
 </p>
+<h2 class="total-cost">Łączny koszt projektów to ok. {totalCost} mln zł</h2>
 <ul>
   {#each cityData as { title, photos, articles, cost }}
     <li class="city-list__wrapper">
@@ -69,6 +72,12 @@
 </ul>
 
 <style>
+  .total-cost {
+    border: 2px solid var(--background-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--accent-color);
+  }
   .city-list__wrapper {
     margin: 1rem 0;
     border: 1px solid var(--background-color);

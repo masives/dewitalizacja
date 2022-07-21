@@ -14,18 +14,18 @@ Problemem wielu miast Polski są projekty "rewitalizacji" będące przykrywką d
 
 Stwórz issue zawierające następujące informacje
 
-  1. Zdjęcie przed i po projekcie
-  2. Źródło zdjęć
-  3. Nazwę miasta
-  4. (opcjonalnie) Linki do artykułów opisujących sprawę
-  5. (opcjonalnie) Koszt inwestycji w złotówkach
+1. Zdjęcie przed i po projekcie
+2. Źródło zdjęć
+3. Nazwę miasta
+4. (opcjonalnie) Linki do artykułów opisujących sprawę
+5. (opcjonalnie) Koszt inwestycji w złotówkach
 
 ## Dla programistów
 
-   1. Sklonuj repozytorium
-   2. Do folderu [src/assets/images/](src/assets/images/) dodaje zdjęcia trzymając się konwencji (cityName)_(before|after).ext
-   3. Do [data.ts](src/data.ts) dodaj kolejny wpis zgodnie z definicją typów
-   4. Stwórz pull requesta i oznacz @masives
+1.  Sklonuj repozytorium
+2.  Do folderu [src/assets/images/](src/assets/images/) dodaje zdjęcia trzymając się konwencji (cityName)\_(before|after).ext
+3.  Do [data.ts](src/data.ts) dodaj kolejny wpis zgodnie z definicją typów
+4.  Stwórz pull requesta i oznacz @masives
 
 # Svelte + TS + Vite
 
@@ -35,14 +35,14 @@ This template should help get you started developing with Svelte and TypeScript 
 
 [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
 
-
 # TODO i do rozważenia
 
 - [x] krótki opis problemu po co ta strona
 - [x] formularz do zgłaszania innych projektów dewitalizacji
+- [x] licznik łacznego kosztu projektów
+- [x] koszt projektów
+  - [ ] z podziałem na unijne i własne
 - [ ] komentarze mieszkańców i władz
-- [ ] koszt projektów z podziałem na unijne i własne
-- [ ] licznik łacznego kosztu projektów
 - [ ] sekcja/podstrona materiały o problemie (betonoza, wyspa cieplna)
 - [ ] poprawki pod seo
 - [ ] lazy loading zdjęć
