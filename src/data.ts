@@ -51,6 +51,17 @@ interface Entry {
 
 export const cityData: Entry[] = [
   {
+    title: 'Poznań, rynek Łazarski',
+    cost: 43,
+    source: 'https://blog.ecol-unicon.com/5-polskich-miast-ktore-cierpia-betonoze/',
+    photos: {
+      after: lazarskiAfter,
+      before: lazarskiBefore,
+      beforeSourceUrl: 'https://www.fakt.pl/wydarzenia/polska/poznan/znow-nie-wystartuje-remont-rynku-lazarskiego-w-poznaniu/5cjbrzf',
+      afterSourceUrl: 'https://zdm.poznan.pl/en/web/aktualnosci/view/id/rynek-lazarski-w-strefie-platnego-parkowania',
+    },
+  },
+  {
     title: 'Skierniewice, rynek',
     cost: 3,
     photos: {
@@ -212,17 +223,6 @@ export const cityData: Entry[] = [
       before: zakliczynBefore,
       beforeSourceUrl: 'http://www.kt24.pl/gmina-zakliczyn-przyjmie-rodzine-repatriantow-ze-wschodu/',
       afterSourceUrl: 'https://www.rdn.pl/news/nowy-rynek-w-zakliczynie-juz-prawie-gotowy-kiedy-koniec-prac',
-    },
-  },
-  {
-    title: 'Poznań, rynek Łazarski',
-    cost: 43,
-    source: 'https://blog.ecol-unicon.com/5-polskich-miast-ktore-cierpia-betonoze/',
-    photos: {
-      after: lazarskiAfter,
-      before: lazarskiBefore,
-      beforeSourceUrl: 'https://www.fakt.pl/wydarzenia/polska/poznan/znow-nie-wystartuje-remont-rynku-lazarskiego-w-poznaniu/5cjbrzf',
-      afterSourceUrl: 'https://zdm.poznan.pl/en/web/aktualnosci/view/id/rynek-lazarski-w-strefie-platnego-parkowania',
     },
   },
   {
