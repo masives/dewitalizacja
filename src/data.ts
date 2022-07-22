@@ -26,6 +26,12 @@ import lubaczowAfter from './assets/images/lubaczow_after.jpeg';
 import lubaczowBefore from './assets/images/lubaczow_before.jpeg';
 import lowiczAfter from './assets/images/lowicz_after.webp';
 import lowiczBefore from './assets/images/lowicz_before.jpeg';
+import zakliczynAfter from './assets/images/zakliczyn_after.jpeg';
+import zakliczynBefore from './assets/images/zakliczyn_before.jpeg';
+import lazarskiAfter from './assets/images/lazarski_after.jpeg';
+import lazarskiBefore from './assets/images/lazarski_before.jpeg';
+import nowytargAfter from './assets/images/nowytarg_after.jpg';
+import nowytargBefore from './assets/images/nowytarg_before.jpeg';
 
 interface Entry {
   title: string;
@@ -195,6 +201,39 @@ export const cityData: Entry[] = [
       before: lowiczBefore,
       beforeSourceUrl: 'https://podroze.gazeta.pl/podroze/56,114158,10917976,sondaz-najladniejszy-rynek-w-polsce-glosuj.html',
       afterSourceUrl: 'https://lowicz.naszemiasto.pl/tag/komunikacja-miejska-w-lowiczu',
+    },
+  },
+  {
+    title: 'Zakliczyn, rynek',
+    cost: 12.6,
+    source: 'https://twitter.com/UrszulaRusecka/status/1528267580670099456?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1528267580670099456%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fvibez.pl%2Fkultura%2Fzakliczyn-powstal-betonowy-rynek-parking-za-12-milionow-zlotych-betonoza-nas-zalewa-6771902393747968a',
+    photos: {
+      after: zakliczynAfter,
+      before: zakliczynBefore,
+      beforeSourceUrl: 'http://www.kt24.pl/gmina-zakliczyn-przyjmie-rodzine-repatriantow-ze-wschodu/',
+      afterSourceUrl: 'https://www.rdn.pl/news/nowy-rynek-w-zakliczynie-juz-prawie-gotowy-kiedy-koniec-prac',
+    },
+  },
+  {
+    title: 'Poznań, rynek Łazarski',
+    cost: 43,
+    source: 'https://blog.ecol-unicon.com/5-polskich-miast-ktore-cierpia-betonoze/',
+    photos: {
+      after: lazarskiAfter,
+      before: lazarskiBefore,
+      beforeSourceUrl: 'https://www.fakt.pl/wydarzenia/polska/poznan/znow-nie-wystartuje-remont-rynku-lazarskiego-w-poznaniu/5cjbrzf',
+      afterSourceUrl: 'https://zdm.poznan.pl/en/web/aktualnosci/view/id/rynek-lazarski-w-strefie-platnego-parkowania',
+    },
+  },
+  {
+    title: 'Wrocław, plac Nowy Targ',
+    cost: 12.4,
+    source: 'https://www.tuwroclaw.com/wiadomosci,zaniedbane-budynki-przy-placu-nowy-targ-pojda-do-remontu-koszty-pokryje-miasto-mieszkancy-i-ue,wia5-3266-23040.html',
+    photos: {
+      after: nowytargAfter,
+      before: nowytargBefore,
+      beforeSourceUrl: 'https://miejscawewroclawiu.pl/zobacz-jak-100-lat-temu-wygladal-plac-nowy-targ/',
+      afterSourceUrl: 'https://miejscawewroclawiu.pl/zobacz-jak-100-lat-temu-wygladal-plac-nowy-targ/',
     },
   },
 ];

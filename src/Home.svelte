@@ -33,7 +33,7 @@
         {#if cost && source}
           {cost} mln zł
             <p>
-                Źródło zdjęcia: <a
+                Źródło kosztów: <a
                     href={source}
                     target="_blank"
                     rel="noopener noreferrer"
