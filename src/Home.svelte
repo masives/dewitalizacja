@@ -25,13 +25,21 @@
 </p>
 <h2 class="total-cost">Łączny koszt projektów to ok. {totalCost} mln zł</h2>
 <ul>
-  {#each cityData as { title, photos, articles, cost }}
+  {#each cityData as { title, photos, articles, cost, source }}
     <li class="city-list__wrapper">
       <h2>{title}</h2>
       <h4>
         Koszt remontu:
-        {#if cost}
+        {#if cost && source}
           {cost} mln zł
+            <p>
+                Źródło zdjęcia: <a
+                    href={source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="city-list-item__source-url">LINK</a
+            >
+            </p>
         {:else}
           brak danych
         {/if}

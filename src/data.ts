@@ -30,6 +30,7 @@ import lowiczBefore from './assets/images/lowicz_before.jpeg';
 interface Entry {
   title: string;
   cost?: number;
+  source?: string;
   articles?: {
     label: string;
     url: string;
@@ -55,7 +56,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Parczew, rynek',
-    cost: 6,
+    cost: 2,
+    source: 'https://www.dziennikwschodni.pl/parczew/rewitalizacja-czyli-wycinka-totalna,n,1000243930.html',
     photos: {
       after: parczewAfter,
       before: parczewBefore,
@@ -66,6 +68,7 @@ export const cityData: Entry[] = [
   {
     title: 'Leżajsk, rynek',
     cost: 14,
+    source: 'https://rzeszow.wyborcza.pl/rzeszow/7,34962,28652221,betonoza-na-rynku-w-lezajsku-mieszkancy-barbarzynstwo-wiceburmistrz.html',
     photos: {
       after: lezajskAfter,
       before: lezajskBefore,
@@ -77,7 +80,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Rawicz, rynek',
-    cost: 10,
+    cost: 11,
+    source: 'https://www.eska.pl/leszno/zmienia-sie-rynek-w-rawiczu-trwa-rewitalizacja-glownego-placu-miasta-aa-3VLL-LJLG-CGAB.html',
     photos: {
       after: rawiczAfter,
       before: rawiczBefore,
@@ -96,7 +100,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Kutno, plac Wolności',
-    cost: 40,
+    cost: 34,
+    source: 'https://www.architekturaibiznes.pl/plac-w-kutnie.-pomnik-wszystkiego-co-zle-we-wspolczesnej-architekturze,7240.html',
     photos: {
       after: kutnoAfter,
       before: kutnoBefore,
@@ -108,6 +113,7 @@ export const cityData: Entry[] = [
   {
     title: 'Kielce, rynek',
     cost: 23,
+    source: 'https://radiokielce.pl/888670/co-kielczanie-sadza-o-zielonym-rynku-155345/',
     photos: {
       after: kielceAfter,
       before: kielceBefore,
@@ -127,7 +133,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Końskowola, rynek',
-    cost: 4.2,
+    cost: 5.3,
+    source: 'https://www.dziennikwschodni.pl/pulawy/ladny-rynek-w-konskowoli,n,1000236723.html',
     photos: {
       after: konskowolaAfter,
       before: konskowolaBefore,
@@ -137,7 +144,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Włocławek, rynek',
-    cost: 1,
+    cost: 4.7,
+    source: 'https://podroze.onet.pl/polska/kujawsko-pomorskie/wloclawek-stary-rynek-po-remoncie/t1wdsmp',
     photos: {
       after: wloclawekAfter,
       before: wloclawekBefore,
@@ -147,7 +155,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Chorzów, rynek',
-    cost: 26,
+    cost: 22.5,
+    source: 'https://chorzow.naszemiasto.pl/przebudowa-rynku-w-chorzowie-zdjecia-stoja-juz-pierwsze/ar/c4-4816147',
     photos: {
       after: chorzowAfter,
       before: chorzowBefore,
@@ -159,7 +168,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Łódź, plac Dąbrowskiego',
-    cost: 8.8,
+    cost: 16,
+    source: 'https://tulodz.pl/wiadomosci-lodz/to-koniec-betonozy-w-centrum-lodzi-plac-dabrowskiego-ma-byc-zielony-zdjecia/FKUNdSgVmsSMTElXVmSF',
     photos: {
       after: lodzAfter,
       before: lodzBefore,
@@ -170,6 +180,7 @@ export const cityData: Entry[] = [
   {
     title: 'Lubaczów, rynek',
     cost: 3.3,
+    source: 'https://elubaczow.com/2021/07/06/lubaczowski-rynek-przykladem-betonozy-w-polsce/',
     photos: {
       after: lubaczowAfter,
       before: lubaczowBefore,
