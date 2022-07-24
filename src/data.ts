@@ -26,10 +26,17 @@ import lubaczowAfter from './assets/images/lubaczow_after.jpeg';
 import lubaczowBefore from './assets/images/lubaczow_before.jpeg';
 import lowiczAfter from './assets/images/lowicz_after.webp';
 import lowiczBefore from './assets/images/lowicz_before.jpeg';
+import zakliczynAfter from './assets/images/zakliczyn_after.jpeg';
+import zakliczynBefore from './assets/images/zakliczyn_before.jpeg';
+import lazarskiAfter from './assets/images/lazarski_after.jpeg';
+import lazarskiBefore from './assets/images/lazarski_before.jpeg';
+import nowytargAfter from './assets/images/nowytarg_after.jpg';
+import nowytargBefore from './assets/images/nowytarg_before.jpeg';
 
 interface Entry {
   title: string;
   cost?: number;
+  source?: string;
   articles?: {
     label: string;
     url: string;
@@ -44,6 +51,17 @@ interface Entry {
 
 export const cityData: Entry[] = [
   {
+    title: 'Poznań, rynek Łazarski',
+    cost: 43,
+    source: 'https://blog.ecol-unicon.com/5-polskich-miast-ktore-cierpia-betonoze/',
+    photos: {
+      after: lazarskiAfter,
+      before: lazarskiBefore,
+      beforeSourceUrl: 'https://www.fakt.pl/wydarzenia/polska/poznan/znow-nie-wystartuje-remont-rynku-lazarskiego-w-poznaniu/5cjbrzf',
+      afterSourceUrl: 'https://zdm.poznan.pl/en/web/aktualnosci/view/id/rynek-lazarski-w-strefie-platnego-parkowania',
+    },
+  },
+  {
     title: 'Skierniewice, rynek',
     cost: 3,
     photos: {
@@ -55,7 +73,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Parczew, rynek',
-    cost: 6,
+    cost: 2,
+    source: 'https://www.dziennikwschodni.pl/parczew/rewitalizacja-czyli-wycinka-totalna,n,1000243930.html',
     photos: {
       after: parczewAfter,
       before: parczewBefore,
@@ -66,6 +85,7 @@ export const cityData: Entry[] = [
   {
     title: 'Leżajsk, rynek',
     cost: 14,
+    source: 'https://rzeszow.wyborcza.pl/rzeszow/7,34962,28652221,betonoza-na-rynku-w-lezajsku-mieszkancy-barbarzynstwo-wiceburmistrz.html',
     photos: {
       after: lezajskAfter,
       before: lezajskBefore,
@@ -77,7 +97,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Rawicz, rynek',
-    cost: 10,
+    cost: 11,
+    source: 'https://www.eska.pl/leszno/zmienia-sie-rynek-w-rawiczu-trwa-rewitalizacja-glownego-placu-miasta-aa-3VLL-LJLG-CGAB.html',
     photos: {
       after: rawiczAfter,
       before: rawiczBefore,
@@ -96,7 +117,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Kutno, plac Wolności',
-    cost: 40,
+    cost: 34,
+    source: 'https://www.architekturaibiznes.pl/plac-w-kutnie.-pomnik-wszystkiego-co-zle-we-wspolczesnej-architekturze,7240.html',
     photos: {
       after: kutnoAfter,
       before: kutnoBefore,
@@ -108,6 +130,7 @@ export const cityData: Entry[] = [
   {
     title: 'Kielce, rynek',
     cost: 23,
+    source: 'https://radiokielce.pl/888670/co-kielczanie-sadza-o-zielonym-rynku-155345/',
     photos: {
       after: kielceAfter,
       before: kielceBefore,
@@ -127,7 +150,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Końskowola, rynek',
-    cost: 4.2,
+    cost: 5.3,
+    source: 'https://www.dziennikwschodni.pl/pulawy/ladny-rynek-w-konskowoli,n,1000236723.html',
     photos: {
       after: konskowolaAfter,
       before: konskowolaBefore,
@@ -137,7 +161,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Włocławek, rynek',
-    cost: 1,
+    cost: 4.7,
+    source: 'https://podroze.onet.pl/polska/kujawsko-pomorskie/wloclawek-stary-rynek-po-remoncie/t1wdsmp',
     photos: {
       after: wloclawekAfter,
       before: wloclawekBefore,
@@ -147,7 +172,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Chorzów, rynek',
-    cost: 26,
+    cost: 22.5,
+    source: 'https://chorzow.naszemiasto.pl/przebudowa-rynku-w-chorzowie-zdjecia-stoja-juz-pierwsze/ar/c4-4816147',
     photos: {
       after: chorzowAfter,
       before: chorzowBefore,
@@ -159,7 +185,8 @@ export const cityData: Entry[] = [
   },
   {
     title: 'Łódź, plac Dąbrowskiego',
-    cost: 8.8,
+    cost: 16,
+    source: 'https://tulodz.pl/wiadomosci-lodz/to-koniec-betonozy-w-centrum-lodzi-plac-dabrowskiego-ma-byc-zielony-zdjecia/FKUNdSgVmsSMTElXVmSF',
     photos: {
       after: lodzAfter,
       before: lodzBefore,
@@ -170,6 +197,7 @@ export const cityData: Entry[] = [
   {
     title: 'Lubaczów, rynek',
     cost: 3.3,
+    source: 'https://elubaczow.com/2021/07/06/lubaczowski-rynek-przykladem-betonozy-w-polsce/',
     photos: {
       after: lubaczowAfter,
       before: lubaczowBefore,
@@ -184,6 +212,28 @@ export const cityData: Entry[] = [
       before: lowiczBefore,
       beforeSourceUrl: 'https://podroze.gazeta.pl/podroze/56,114158,10917976,sondaz-najladniejszy-rynek-w-polsce-glosuj.html',
       afterSourceUrl: 'https://lowicz.naszemiasto.pl/tag/komunikacja-miejska-w-lowiczu',
+    },
+  },
+  {
+    title: 'Zakliczyn, rynek',
+    cost: 12.6,
+    source: 'https://twitter.com/UrszulaRusecka/status/1528267580670099456?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1528267580670099456%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fvibez.pl%2Fkultura%2Fzakliczyn-powstal-betonowy-rynek-parking-za-12-milionow-zlotych-betonoza-nas-zalewa-6771902393747968a',
+    photos: {
+      after: zakliczynAfter,
+      before: zakliczynBefore,
+      beforeSourceUrl: 'http://www.kt24.pl/gmina-zakliczyn-przyjmie-rodzine-repatriantow-ze-wschodu/',
+      afterSourceUrl: 'https://www.rdn.pl/news/nowy-rynek-w-zakliczynie-juz-prawie-gotowy-kiedy-koniec-prac',
+    },
+  },
+  {
+    title: 'Wrocław, plac Nowy Targ',
+    cost: 12.4,
+    source: 'https://www.tuwroclaw.com/wiadomosci,zaniedbane-budynki-przy-placu-nowy-targ-pojda-do-remontu-koszty-pokryje-miasto-mieszkancy-i-ue,wia5-3266-23040.html',
+    photos: {
+      after: nowytargAfter,
+      before: nowytargBefore,
+      beforeSourceUrl: 'https://miejscawewroclawiu.pl/zobacz-jak-100-lat-temu-wygladal-plac-nowy-targ/',
+      afterSourceUrl: 'https://miejscawewroclawiu.pl/zobacz-jak-100-lat-temu-wygladal-plac-nowy-targ/',
     },
   },
 ];
