@@ -32,6 +32,14 @@ import lazarskiAfter from './assets/images/lazarski_after.jpeg';
 import lazarskiBefore from './assets/images/lazarski_before.jpeg';
 import nowytargAfter from './assets/images/nowytarg_after.jpg';
 import nowytargBefore from './assets/images/nowytarg_before.jpeg';
+import ciechanowAfter from './assets/images/ciechanow_after.jpeg';
+import ciechanowBefore from './assets/images/ciechanow_before.png';
+import brzozowAfter from './assets/images/brzozow_after.jpeg';
+import brzozowBefore from './assets/images/brzozow_before.jpeg';
+import chrzanowAfter from './assets/images/chrzanow_after.jpeg';
+import chrzanowBefore from './assets/images/chrzanow_before.jpeg';
+import szczebrzeszynAfter from './assets/images/szczebrzeszyn_after.jpeg';
+import szczebrzeszynBefore from './assets/images/szczebrzeszyn_before.jpeg';
 
 interface Entry {
   title: string;
@@ -234,6 +242,48 @@ export const cityData: Entry[] = [
       before: nowytargBefore,
       beforeSourceUrl: 'https://miejscawewroclawiu.pl/zobacz-jak-100-lat-temu-wygladal-plac-nowy-targ/',
       afterSourceUrl: 'https://miejscawewroclawiu.pl/zobacz-jak-100-lat-temu-wygladal-plac-nowy-targ/',
+    },
+  },
+  {
+    title: 'Ciechanów, plac Jana Pawła II',
+    cost: 8.3,
+    source: 'https://ciechanowinaczej.pl/artykul/pierwszy-krok-w-kierunku/1296982',
+    photos: {
+      after: ciechanowAfter,
+      before: ciechanowBefore,
+      beforeSourceUrl: 'https://fotopolska.eu/496216,foto.html?o=u83464',
+      afterSourceUrl: 'https://ciechanowinaczej.pl/artykul/pierwszy-krok-w-kierunku/1296982',
+    },
+  },
+  {
+    title: 'Brzozów, rynek',
+    cost: 5.9,
+    source: 'https://brzozowiana.pl/brzozow/item/342-rewitalizacja-rynku-w-brzozowie-c-d.html',
+    photos: {
+      after: brzozowAfter,
+      before: brzozowBefore,
+      beforeSourceUrl: 'http://www.polskaniezwykla.pl/web/place/16576,brzozow-muzeum-regionalne.html',
+      afterSourceUrl: 'https://nowiny24.pl/rewitalizacja-rynku-w-brzozowie-dlaczego-wycieto-wszystkie-drzewa/ga/c3-6162997/zd/9568189',
+    },
+  },
+  {
+    title: 'Chrzanów, rynek',
+    cost: 9.4,
+    source: 'https://chrzanow.naszemiasto.pl/rynek-w-chrzanowie-otwarty-po-przebudowie-mieszkancy-moga/ar/c1-8831081',
+    photos: {
+      after: chrzanowAfter,
+      before: chrzanowBefore,
+      beforeSourceUrl: 'https://fotopolska.eu/Chrzanow/u23925,Rynek.html?f=9205-foto',
+      afterSourceUrl: 'https://chrzanow.naszemiasto.pl/rynek-w-chrzanowie-otwarty-po-przebudowie-mieszkancy-moga/ar/c1-8831081',
+    },
+  },
+  {
+    title: 'Szczebrzeszyn, rynek',
+    photos: {
+      after: szczebrzeszynAfter,
+      before: szczebrzeszynBefore,
+      beforeSourceUrl: 'https://shtetlroutes.eu/cache/dlibra/image/86/86829/1280x1024/',
+      afterSourceUrl: 'https://podrozniczo.pl/wp-content/uploads/2021/07/Szczebrzeszyn-glowny-plac.jpg',
     },
   },
 ];

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { cityData } from './data';
 
-  const totalCost = cityData.reduce((acc, curr) => (curr.cost ? acc + curr.cost : acc), 0);
+  const totalCost = cityData.reduce((acc, curr) => (curr.cost ? acc + curr.cost : acc), 0).toFixed(2);
 </script>
 
 <p>
@@ -55,7 +55,7 @@
                   href={photos.beforeSourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="city-list-item__source-url">{photos.afterSourceUrl}</a
+                  class="city-list-item__source-url">{photos.beforeSourceUrl}</a
                 >
               </p>
             </figcaption>
