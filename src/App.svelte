@@ -25,7 +25,7 @@
 <footer>
   © 2022 <a href={'https://github.com/masives/dewitalizacja#jak-doda%C4%87-wpis'} target="_blank" rel="noopener noreferrer">Józef Piecyk</a>
   przy współpracy z
-  <a href={'https://www.linkedin.com/in/anna-szczepanik-752730166/'} target="_blank" rel="noopener noreferrer">Ania Szczepanik</a>
+  <a href={'https://www.linkedin.com/in/anna-szczepanik-752730166/'} target="_blank" rel="noopener noreferrer">Anja Szczepanik</a>
 </footer>
 
 <style global>
