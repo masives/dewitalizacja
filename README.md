@@ -31,6 +31,12 @@ Stwórz issue zawierające następujące informacje
 
 This template should help get you started developing with Svelte and TypeScript in Vite.
 
+# Colors
+
+Color palette from
+
+https://colorhunt.co/palette/96ceb4ffeeadd9534fffad60
+
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
