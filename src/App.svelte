@@ -2,6 +2,7 @@
   import Contact from './Contact.svelte';
   import { Router, Route, Link } from 'svelte-navigator';
   import Home from './Home.svelte';
+  import Analytics from './Analytics.svelte';
 </script>
 
 <Router>
@@ -27,6 +28,7 @@
   przy współpracy z
   <a href={'https://www.linkedin.com/in/anna-szczepanik-752730166/'} target="_blank" rel="noopener noreferrer">Anja Szczepanik</a>
 </footer>
+<Analytics />
 
 <style global>
   :root {
@@ -52,7 +54,8 @@
     text-align: center;
   }
 
-  nav a {
+  nav a,
+  button {
     color: var(--primary-color);
     text-decoration: none;
     padding: 8px;
