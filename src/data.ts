@@ -62,6 +62,12 @@ export const cityData: Entry[] = [
     title: 'Poznań, rynek Łazarski',
     cost: 43,
     source: 'https://blog.ecol-unicon.com/5-polskich-miast-ktore-cierpia-betonoze/',
+    articles: [
+      {
+        label: '5 polskich miast, które cierpią przez betonozę',
+        url: 'https://blog.ecol-unicon.com/5-polskich-miast-ktore-cierpia-betonoze/',
+      },
+    ],
     photos: {
       after: lazarskiAfter,
       before: lazarskiBefore,
@@ -83,6 +89,12 @@ export const cityData: Entry[] = [
     title: 'Parczew, rynek',
     cost: 2,
     source: 'https://www.dziennikwschodni.pl/parczew/rewitalizacja-czyli-wycinka-totalna,n,1000243930.html',
+    articles: [
+      {
+        label: 'Parczew: Rewitalizacja czyli wycinka totalna. Konserwator: Za 15 lat urosną nowe drzewa ',
+        url: 'https://www.dziennikwschodni.pl/parczew/rewitalizacja-czyli-wycinka-totalna,n,1000243930.html',
+      },
+    ],
     photos: {
       after: parczewAfter,
       before: parczewBefore,
@@ -94,6 +106,12 @@ export const cityData: Entry[] = [
     title: 'Leżajsk, rynek',
     cost: 14,
     source: 'https://rzeszow.wyborcza.pl/rzeszow/7,34962,28652221,betonoza-na-rynku-w-lezajsku-mieszkancy-barbarzynstwo-wiceburmistrz.html',
+    articles: [
+      {
+        label: 'Betonoza w Leżajsku za 14 mln zł hitem internetu. Wiceburmistrz: "Drzewa zasłoniłyby scenę"',
+        url: 'https://rzeszow.wyborcza.pl/rzeszow/7,34962,28652221,betonoza-na-rynku-w-lezajsku-mieszkancy-barbarzynstwo-wiceburmistrz.html',
+      },
+    ],
     photos: {
       after: lezajskAfter,
       before: lezajskBefore,
@@ -107,6 +125,12 @@ export const cityData: Entry[] = [
     title: 'Rawicz, rynek',
     cost: 11,
     source: 'https://www.eska.pl/leszno/zmienia-sie-rynek-w-rawiczu-trwa-rewitalizacja-glownego-placu-miasta-aa-3VLL-LJLG-CGAB.html',
+    articles: [
+      {
+        label: 'Zmienia się rynek w Rawiczu. Trwa rewitalizacja głównego placu miasta',
+        url: 'https://www.eska.pl/leszno/zmienia-sie-rynek-w-rawiczu-trwa-rewitalizacja-glownego-placu-miasta-aa-3VLL-LJLG-CGAB.html',
+      },
+    ],
     photos: {
       after: rawiczAfter,
       before: rawiczBefore,
@@ -127,6 +151,12 @@ export const cityData: Entry[] = [
     title: 'Kutno, plac Wolności',
     cost: 34,
     source: 'https://www.architekturaibiznes.pl/plac-w-kutnie.-pomnik-wszystkiego-co-zle-we-wspolczesnej-architekturze,7240.html',
+    articles: [
+      {
+        label: 'Plac w Kutnie. Pomnik wszystkiego, co złe we współczesnej architekturze',
+        url: 'https://www.architekturaibiznes.pl/plac-w-kutnie.-pomnik-wszystkiego-co-zle-we-wspolczesnej-architekturze,7240.html',
+      },
+    ],
     photos: {
       after: kutnoAfter,
       before: kutnoBefore,
@@ -139,6 +169,9 @@ export const cityData: Entry[] = [
     title: 'Kielce, rynek',
     cost: 23,
     source: 'https://radiokielce.pl/888670/co-kielczanie-sadza-o-zielonym-rynku-155345/',
+    articles: [
+      { label: 'Co kielczanie sądzą o zielonym Rynku?', url: 'https://radiokielce.pl/888670/co-kielczanie-sadza-o-zielonym-rynku-155345/' },
+    ],
     photos: {
       after: kielceAfter,
       before: kielceBefore,
@@ -160,6 +193,12 @@ export const cityData: Entry[] = [
     title: 'Końskowola, rynek',
     cost: 5.3,
     source: 'https://www.dziennikwschodni.pl/pulawy/ladny-rynek-w-konskowoli,n,1000236723.html',
+    articles: [
+      {
+        label: 'Rynek w Końskowoli doczeka się remontu ',
+        url: 'https://www.dziennikwschodni.pl/pulawy/ladny-rynek-w-konskowoli,n,1000236723.html',
+      },
+    ],
     photos: {
       after: konskowolaAfter,
       before: konskowolaBefore,
@@ -171,6 +210,12 @@ export const cityData: Entry[] = [
     title: 'Włocławek, rynek',
     cost: 4.7,
     source: 'https://podroze.onet.pl/polska/kujawsko-pomorskie/wloclawek-stary-rynek-po-remoncie/t1wdsmp',
+    articles: [
+      {
+        label: ' Włocławek: Stary Rynek po remoncie ',
+        url: 'https://podroze.onet.pl/polska/kujawsko-pomorskie/wloclawek-stary-rynek-po-remoncie/t1wdsmp',
+      },
+    ],
     photos: {
       after: wloclawekAfter,
       before: wloclawekBefore,
@@ -182,6 +227,12 @@ export const cityData: Entry[] = [
     title: 'Chorzów, rynek',
     cost: 22.5,
     source: 'https://chorzow.naszemiasto.pl/przebudowa-rynku-w-chorzowie-zdjecia-stoja-juz-pierwsze/ar/c4-4816147',
+    articles: [
+      {
+        label: 'Przebudowa rynku w Chorzowie ZDJĘCIA Stoją już pierwsze pawilony. Koniec prac w 2019 roku',
+        url: 'https://chorzow.naszemiasto.pl/przebudowa-rynku-w-chorzowie-zdjecia-stoja-juz-pierwsze/ar/c4-4816147',
+      },
+    ],
     photos: {
       after: chorzowAfter,
       before: chorzowBefore,
@@ -194,7 +245,14 @@ export const cityData: Entry[] = [
   {
     title: 'Łódź, plac Dąbrowskiego',
     cost: 16,
-    source: 'https://tulodz.pl/wiadomosci-lodz/to-koniec-betonozy-w-centrum-lodzi-plac-dabrowskiego-ma-byc-zielony-zdjecia/FKUNdSgVmsSMTElXVmSF',
+    source:
+      'https://tulodz.pl/wiadomosci-lodz/to-koniec-betonozy-w-centrum-lodzi-plac-dabrowskiego-ma-byc-zielony-zdjecia/FKUNdSgVmsSMTElXVmSF',
+    articles: [
+      {
+        label: 'To koniec „betonozy” w centrum Łodzi. Plac Dąbrowskiego ma być zielony',
+        url: 'https://tulodz.pl/wiadomosci-lodz/to-koniec-betonozy-w-centrum-lodzi-plac-dabrowskiego-ma-byc-zielony-zdjecia/FKUNdSgVmsSMTElXVmSF',
+      },
+    ],
     photos: {
       after: lodzAfter,
       before: lodzBefore,
@@ -206,6 +264,12 @@ export const cityData: Entry[] = [
     title: 'Lubaczów, rynek',
     cost: 3.3,
     source: 'https://elubaczow.com/2021/07/06/lubaczowski-rynek-przykladem-betonozy-w-polsce/',
+    articles: [
+      {
+        label: 'Lubaczowski Rynek przykładem „betonozy” w Polsce',
+        url: 'https://elubaczow.com/2021/07/06/lubaczowski-rynek-przykladem-betonozy-w-polsce/',
+      },
+    ],
     photos: {
       after: lubaczowAfter,
       before: lubaczowBefore,
@@ -225,7 +289,9 @@ export const cityData: Entry[] = [
   {
     title: 'Zakliczyn, rynek',
     cost: 12.6,
-    source: 'https://twitter.com/UrszulaRusecka/status/1528267580670099456?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1528267580670099456%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fvibez.pl%2Fkultura%2Fzakliczyn-powstal-betonowy-rynek-parking-za-12-milionow-zlotych-betonoza-nas-zalewa-6771902393747968a',
+    source:
+      'https://twitter.com/UrszulaRusecka/status/1528267580670099456?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1528267580670099456%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fvibez.pl%2Fkultura%2Fzakliczyn-powstal-betonowy-rynek-parking-za-12-milionow-zlotych-betonoza-nas-zalewa-6771902393747968a',
+    articles: [],
     photos: {
       after: zakliczynAfter,
       before: zakliczynBefore,
@@ -236,7 +302,9 @@ export const cityData: Entry[] = [
   {
     title: 'Wrocław, plac Nowy Targ',
     cost: 12.4,
-    source: 'https://www.tuwroclaw.com/wiadomosci,zaniedbane-budynki-przy-placu-nowy-targ-pojda-do-remontu-koszty-pokryje-miasto-mieszkancy-i-ue,wia5-3266-23040.html',
+    source:
+      'https://www.tuwroclaw.com/wiadomosci,zaniedbane-budynki-przy-placu-nowy-targ-pojda-do-remontu-koszty-pokryje-miasto-mieszkancy-i-ue,wia5-3266-23040.html',
+    articles: [],
     photos: {
       after: nowytargAfter,
       before: nowytargBefore,
@@ -248,6 +316,12 @@ export const cityData: Entry[] = [
     title: 'Ciechanów, plac Jana Pawła II',
     cost: 8.3,
     source: 'https://ciechanowinaczej.pl/artykul/pierwszy-krok-w-kierunku/1296982',
+    articles: [
+      {
+        label: 'Pierwszy krok w kierunku odbetonowania centrum Ciechanowa',
+        url: 'https://ciechanowinaczej.pl/artykul/pierwszy-krok-w-kierunku/1296982',
+      },
+    ],
     photos: {
       after: ciechanowAfter,
       before: ciechanowBefore,
@@ -259,6 +333,7 @@ export const cityData: Entry[] = [
     title: 'Brzozów, rynek',
     cost: 5.9,
     source: 'https://brzozowiana.pl/brzozow/item/342-rewitalizacja-rynku-w-brzozowie-c-d.html',
+    articles: [{ label: '', url: 'https://brzozowiana.pl/brzozow/item/342-rewitalizacja-rynku-w-brzozowie-c-d.html' }],
     photos: {
       after: brzozowAfter,
       before: brzozowBefore,
@@ -270,6 +345,12 @@ export const cityData: Entry[] = [
     title: 'Chrzanów, rynek',
     cost: 9.4,
     source: 'https://chrzanow.naszemiasto.pl/rynek-w-chrzanowie-otwarty-po-przebudowie-mieszkancy-moga/ar/c1-8831081',
+    articles: [
+      {
+        label: 'Rewitalizacja rynku w Brzozowie - c.d.',
+        url: 'https://chrzanow.naszemiasto.pl/rynek-w-chrzanowie-otwarty-po-przebudowie-mieszkancy-moga/ar/c1-8831081',
+      },
+    ],
     photos: {
       after: chrzanowAfter,
       before: chrzanowBefore,
