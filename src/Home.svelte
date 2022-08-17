@@ -32,14 +32,9 @@
         Koszt remontu:
         {#if cost && source}
           {cost} mln zł
-            <p>
-                Źródło kosztów: <a
-                    href={source}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="city-list-item__source-url">LINK</a
-            >
-            </p>
+          <p>
+            Źródło kosztów: <a href={source} target="_blank" rel="noopener noreferrer" class="city-list-item__source-url">LINK</a>
+          </p>
         {:else}
           brak danych
         {/if}
@@ -75,6 +70,15 @@
           </figure>
         </div>
       </div>
+
+      {#if articles && articles.length > 0}
+        <div class="city-list-articles-wrapper">
+          <h4>Artykuły</h4>
+          {#each articles as article}
+            <a href={article.url} target="_blank" rel="noopener noreferrer">{article.label}</a>
+          {/each}
+        </div>
+      {/if}
     </li>
   {/each}
 </ul>
@@ -110,6 +114,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: block;
+  }
+
+  .city-list-articles-wrapper {
+    margin: 1rem;
   }
 
   @media (max-width: 480px) {
